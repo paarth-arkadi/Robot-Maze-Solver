@@ -1,11 +1,14 @@
 #include <AFMotor.h>
+# define STOPPED 0
+# define FOLLOWING_LINE 1
+# define NO_LINE 2
+#define RIGHT 1
+#define LEFT -1
+
 AF_DCMotor leftMotor(2);
 AF_DCMotor rightMotor(3);
 
 int mode = 0;
-# define STOPPED 0
-# define FOLLOWING_LINE 1
-# define NO_LINE 2
 const int power = 255;
 const int iniMotorPower = 127;
 const int adj = 1;

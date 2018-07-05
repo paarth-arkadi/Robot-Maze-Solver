@@ -1,3 +1,7 @@
+#include <AFMotor.h>
+AF_DCMotor leftMotor(2);
+AF_DCMotor rightMotor(3);
+
 void motorStop()
 {
   leftMotor.run(RELEASE);

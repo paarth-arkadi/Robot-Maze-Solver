@@ -1,4 +1,8 @@
-
+const int lineFollowSensor0 = A0; 
+const int lineFollowSensor1 = A1; 
+const int lineFollowSensor2 = A2; 
+const int lineFollowSensor3 = A3;
+const int lineFollowSensor4 = A5;
 
 //-------------------------------------------------------------
 /* read line sensors values 

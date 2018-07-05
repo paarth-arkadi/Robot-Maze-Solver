@@ -2,6 +2,17 @@
 AF_DCMotor leftMotor(2);
 AF_DCMotor rightMotor(3);
 
+int mode = 0;
+# define STOPPED 0
+# define FOLLOWING_LINE 1
+# define NO_LINE 2
+const int power = 255;
+const int iniMotorPower = 127;
+const int adj = 1;
+float adjTurn = 8;
+const int ledPin = 13;
+const int buttonPin = 9;
+
 void motorStop()
 {
   leftMotor.run(RELEASE);
